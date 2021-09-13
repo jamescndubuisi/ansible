@@ -1,0 +1,9 @@
+---
+ - name: installleafpad
+   hosts: linux
+   become: yes
+   tasks:
+    - name: install leafpad
+      apt:
+        name: leafpad
+        state: latest
